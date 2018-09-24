@@ -86,7 +86,7 @@ module "masters-internal" {
   ]
 
   https_acm_cert_arn = "${var.https_acm_cert_arn}"
-  elb_name_format    = "%s-masters-internal"
+  elb_name_format    = "intmasters-%s"
 
   instances       = ["${var.instances}"]
   security_groups = ["${var.security_groups}"]
